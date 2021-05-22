@@ -50,9 +50,9 @@ def start(update, context):
     start_string = f'''
 Hi {update.message.chat.first_name}, This bot can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
+Follow our channel for more bot and daily updates @toxic_help
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/019996f816db9ed576cff.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
-
+    
 
 @run_async
 def repo(update, context):
