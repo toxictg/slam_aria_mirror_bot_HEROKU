@@ -52,7 +52,8 @@ Hi {update.message.chat.first_name}, This bot can mirror all your links to Googl
 Type /{BotCommands.HelpCommand} to get a list of available commands
 Follow our channel for more bot and daily updates @toxic_help
 '''
-    
+    update.effective_message.reply_photo("", start_string, parse_mode=ParseMode.MARKDOWN)
+
 
 @run_async
 def repo(update, context):
